@@ -37,7 +37,7 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
         <section class="front branding-front">
-          <h1>Building a RESTful Web Service on Drupal 8 using only a mouse.</h1>
+          <h1>Building a RESTful Web Service (and other cool things) on Drupal 8 using only a mouse.</h1>
           <p>
             <small><a href="http://mikecr.it">Mike Crittenden</a> / <a href="http://twitter.com/mcrittenden">@mcrittenden</a></small>
           </p>
@@ -174,6 +174,43 @@
         <section>
           <section>
             <h2>Building a RESTful API on D8</h2>
+          </section>
+          <section>
+            <h2>Enable the modules.</h2>
+          </section>
+          <section>
+            <h2>Start doing stuff.</h2>
+          </section>
+          <section>
+            <h2>Get fancy!</h2>
+            <pre>
+              <code data-trim contenteditable>
+resources:
+  entity:node:
+    GET:
+      supported_formats:
+        - hal_json
+      supported_auth:
+        - basic_auth
+    POST:
+      supported_formats:
+        - hal_json
+      supported_auth:
+        - basic_auth
+    PATCH:
+      supported_formats:
+        - hal_json
+      supported_auth:
+        - basic_auth
+    DELETE:
+      supported_formats:
+        - hal_json
+      supported_auth:
+        - basic_auth
+              </code>
+            </pre>
+        <p>Edit me!</p>
+
           </section>
         </section>
 
